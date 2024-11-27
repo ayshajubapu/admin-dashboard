@@ -1,0 +1,202 @@
+/* General styles for UserTable */
+.user-management {
+    position: relative;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  /* Background Animation */
+  .background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 300% 300%;
+    animation: gradient-shift 10s ease infinite;
+  }
+  
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    animation: gradient-animation 6s ease infinite; /* Adjust duration as needed */
+    background: linear-gradient(90deg, #eb92b7, #ff758c, #fc6e51, #ff9e2c);
+    background-size: 400% 400%;
+    color: #ffffff;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .user-table th {
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay for headers */
+    text-transform: uppercase;
+  }
+  
+  .user-table td {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay for rows */
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight alternating row effect */
+  }
+  
+  .user-row:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Highlight effect */
+  }
+  
+  .icon {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .icon.edit-icon:hover {
+    color: #4caf50;
+  }
+  
+  .icon.delete-icon:hover {
+    color: #f44336;
+  }
+  
+  /* Responsive styles */
+  
+  /* For mobile screens */
+  @media (max-width: 480px) {
+    .user-management {
+      padding: 15px;
+    }
+  
+    .user-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .user-form input,
+    .user-form select,
+    .user-form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .user-table {
+      font-size: 14px;
+      background-size: 300% 300%; /* Adjust for mobile screens */
+    }
+  
+    .user-table th,
+    .user-table td {
+      padding: 10px;
+    }
+  
+    .icon {
+      font-size: 18px;
+    }
+  }
+  
+  /* For tablets (medium screens) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .user-management {
+      padding: 20px;
+    }
+  
+    .user-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+  
+    .user-form input,
+    .user-form select,
+    .user-form button {
+      font-size: 15px;
+      padding: 12px;
+    }
+  
+    .user-table {
+      font-size: 15px;
+      background-size: 300% 300%; /* Adjust for tablet screens */
+    }
+  
+    .user-table th,
+    .user-table td {
+      padding: 12px;
+    }
+  
+    .icon {
+      font-size: 18px;
+    }
+  }
+  
+  /* For desktop/laptop screens */
+  @media (min-width: 769px) {
+    .user-management {
+      padding: 20px;
+      max-width: 1200px;
+    }
+  
+    .user-form {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  
+    .user-form input,
+    .user-form select,
+    .user-form button {
+      font-size: 16px;
+      padding: 12px;
+    }
+  
+    .user-table {
+      font-size: 16px;
+      background-size: 400% 400%; /* Adjust for desktop/laptop screens */
+    }
+  
+    .user-table th,
+    .user-table td {
+      padding: 15px;
+    }
+  
+    .icon {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
+  

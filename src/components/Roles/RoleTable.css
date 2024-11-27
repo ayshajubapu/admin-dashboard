@@ -1,0 +1,241 @@
+/* General Styles */
+.role-table-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #d8bef4, #747175);
+    background-size: 300% 300%;
+    animation: gradient-shift 6s infinite;
+  }
+  
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .role-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-button,
+  .cancel-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .loading-message {
+    text-align: center;
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .styled-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .styled-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .styled-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .action-icon {
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .edit-icon {
+    color: blue;
+  }
+  
+  .delete-icon {
+    color: red;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For mobile screens */
+  @media (max-width: 480px) {
+    .role-table-container {
+      padding: 15px;
+      max-width: 100%;
+      background: linear-gradient(45deg, #d8bef4, #747175);
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    .role-form input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .submit-button,
+    .cancel-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .styled-table th,
+    .styled-table td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .action-icon {
+      font-size: 14px;
+    }
+  }
+  
+  /* For tablets (medium screens) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .role-table-container {
+      padding: 18px;
+      max-width: 100%;
+    }
+  
+    h3 {
+      font-size: 24px;
+    }
+  
+    .role-form input {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .submit-button,
+    .cancel-button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .styled-table th,
+    .styled-table td {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .action-icon {
+      font-size: 16px;
+    }
+  }
+  
+  /* For desktop (large screens) */
+  @media (min-width: 769px) {
+    .role-table-container {
+      padding: 20px;
+      max-width: 800px;
+    }
+  
+    h3 {
+      font-size: 28px;
+    }
+  
+    .role-form input {
+      font-size: 18px;
+      padding: 12px;
+    }
+  
+    .submit-button,
+    .cancel-button {
+      font-size: 18px;
+      padding: 12px;
+    }
+  
+    .styled-table th,
+    .styled-table td {
+      font-size: 18px;
+      padding: 12px;
+    }
+  
+    .action-icon {
+      font-size: 18px;
+    }
+  }
+  
+  /* Animation Keyframes */
+  @keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(90deg, #e0a0ba, #ff758c, #ffc3a0);
+    }
+    25% {
+      background: linear-gradient(90deg, #c3cde6, #a4b3e4, #848ae6);
+    }
+    50% {
+      background: linear-gradient(90deg, #89f7fe, #66a6ff, #5a7cff);
+    }
+    75% {
+      background: linear-gradient(90deg, #7efdd8, #9bd2af, #8fd3f4);
+    }
+    100% {
+      background: linear-gradient(90deg, #ff7eb3, #ff758c, #ffc3a0);
+    }
+  }
+  
+  .styled-table tbody tr {
+    animation: gradientAnimation 6s infinite;
+    background-size: 200% 200%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .styled-table tbody tr:hover {
+    transform: scale(1.02);
+  }
+  
